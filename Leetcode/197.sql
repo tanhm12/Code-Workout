@@ -1,0 +1,1 @@
+SELECT id from Weather w1 WHERE w1.temperature > (SELECT temperature from Weather w2 WHERE DATEDIFF(w1.recordDate,  w2.recordDate) = 1)
