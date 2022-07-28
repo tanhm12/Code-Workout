@@ -6,7 +6,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def lowestCommonAncestor(root: 'TreeNode', p: 'TreeNode', q: 'TreeNode'):
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         res = None
         def travel(node: 'TreeNode'):
             nonlocal res
@@ -21,7 +21,3 @@ class Solution:
             return left or right or return_val
         travel(root)
         return res
-            
-            
-            
-        
