@@ -27,4 +27,3 @@ def permuteUnique(nums: List[int]):
 nums = [1,1,2]
 nums = [1,2,3]
 print(permuteUnique(nums)) 
-    
