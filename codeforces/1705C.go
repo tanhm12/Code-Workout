@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Pair struct {
 	l int
@@ -26,8 +28,15 @@ func readPairInput(length int) []Pair {
 	return arr
 }
 
-func solve(n int, c int, q int, commands []Pair, queries []int, s string) {
-	n = 0
+func getChar(id int, cid int, s *string, commands *[]Pair) string {
+
+}
+
+func solve(n int, c int, q int, commands *[]Pair, queries *[]int, s string) {
+	// sort.Sort(sort.IntSlice(*queries))
+	for _, pair := range *commands {
+
+	}
 }
 
 func main() {
@@ -39,6 +48,6 @@ func main() {
 		fmt.Scanf("%s", &s)
 		commands := readPairInput(c)
 		queries := readIntInput(q)
-		solve(n, c, q, commands, queries, s)
+		solve(n, c, q, &commands, &queries, s)
 	}
 }
