@@ -2,7 +2,6 @@ from typing import List
 
 def numFactoredBinaryTrees(arr: List[int]):
     import math
-    from functools import lru_cache
     
     mod = int(1e9) + 7
     
