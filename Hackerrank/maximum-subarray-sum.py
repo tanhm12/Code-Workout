@@ -12,7 +12,7 @@ def maximumSum(a, m):
         pref_sum[i+1][1] = i
     
     pref_sum.sort()
-        
+    
     
     print(pref_sum)
     
