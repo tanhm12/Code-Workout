@@ -4,7 +4,6 @@ class ListNode:
         self.next = next
 
 
-
 def isPalindrome(head: ListNode):
     def find_mid(head: ListNode = head):
         one_jump = head
