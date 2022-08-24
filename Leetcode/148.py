@@ -9,6 +9,7 @@ class ListNode:
 class Solution:
     def __init__(self):
         self.dummy_head = ListNode()
+        self.cur = self.dummy_head
         
     def find_mid(self, head: ListNode):
         one_jump = head
@@ -24,24 +25,23 @@ class Solution:
             
             
     def merge(self, head1: ListNode, head2: ListNode):
-        
-        cur = self.dummy_head
+        self.cur = self.dummy_head
         while head1 is not None and head2 is not None:
             if head1.val <= head2.val:
-                cur.next = head1
+                self.cur.next = head1
                 head1 = head1.next
             else:
-                cur.next = head2
+                self.cur.next = head2
                 head2 = head2.next
-            cur = cur.next
+            self.cur = self.cur.next
         
         if head1 is None:
             head1 = head2
         
         while head1 is not None:
-            cur.next = head1
+            self.cur.next = head1
             head1 = head1.next
-            cur = cur.next
+            self.cur = self.cur.next
         
         return self.dummy_head.next
         
