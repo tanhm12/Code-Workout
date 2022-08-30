@@ -3,12 +3,12 @@ from typing import List
 class Solution:
     def numIslands(self, grid: List[List[str]]):
         n, m = len(grid), len(grid[0])
-        def travel(i, j, current_island):
+        def travel(i, j):
             if grid[i][j] == "1":
-                grid[i][j] = current_island
+                grid[i][j] = "0"
                 for ni, nj in [(i-1, j), (i+1, j), (i, j-1), (i, j+1)]:
                     if 0 <= ni < n and 0 <= nj < m:
-                        travel(ni, nj, current_island)
+                        travel(ni, nj)
         
         num_island = 0
         for i in range(n):
