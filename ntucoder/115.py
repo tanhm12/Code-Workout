@@ -28,8 +28,6 @@ def find(pos):
             sys.exit(0)
         return 
     
-    left = 0 if pos == 0 else res[pos-1]
-    
     for i in list(remain):
         remain -= set([i])
         res[pos] = i
@@ -48,5 +46,6 @@ find(row + 1)
 #             m[i][item] = 'w'
 #         print("\n".join([''.join(line) for line in m]))
 #         break
+
         
     
