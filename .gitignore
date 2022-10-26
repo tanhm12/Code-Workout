@@ -1,5 +1,6 @@
+.vscode/
+.DS_Store/
 Hackerrank/tmp_out.txt
 ntucoder/*
 Leetcode/test.py
 !ntucoder/*.*
-.vscode/
