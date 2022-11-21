@@ -7,7 +7,7 @@ class Solution:
         sol = [0 for _ in range(n+1)]
         sol[1] = 1
         for i in range(1, n//2+1):
-            left = 2*(i-1) + 1
+            left = 2*(i-1) + 2
             right = left + 1
             if left <= n:
                 sol[left] = sol[i]
