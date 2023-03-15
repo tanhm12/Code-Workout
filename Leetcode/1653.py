@@ -11,6 +11,5 @@ class Solution:
             res = min(res, ca + cb)
 
         return res
-s = "aababbab"
         
         
