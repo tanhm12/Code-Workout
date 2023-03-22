@@ -1,0 +1,119 @@
+Test Case 1:
+s1 = "abc"
+s2 = "def"
+s3 = "adbecf"
+Expected Output: True
+
+Test Case 2:
+s1 = "abc"
+s2 = "def"
+s3 = "adbcfe"
+Expected Output: False
+
+Test Case 3:
+s1 = "aabcc"
+s2 = "dbbca"
+s3 = "aadbbcbcac"
+Expected Output: True
+
+Test Case 4:
+s1 = "aabcc"
+s2 = "dbbca"
+s3 = "aadbbbaccc"
+Expected Output: False
+
+Test Case 5:
+s1 = ""
+s2 = ""
+s3 = ""
+Expected Output: True
+
+Test Case 6:
+s1 = "a"
+s2 = ""
+s3 = "a"
+Expected Output: True
+
+Test Case 7:
+s1 = ""
+s2 = "b"
+s3 = "b"
+Expected Output: True
+
+Test Case 8:
+s1 = "xyz"
+s2 = "uvw"
+s3 = "xuvywz"
+Expected Output: True
+
+Test Case 9:
+s1 = "hello"
+s2 = "world"
+s3 = "hweolrllod"
+Expected Output: True
+
+Test Case 10:
+s1 = "abcde"
+s2 = "fghij"
+s3 = "afbgchdije"
+Expected Output: False
+
+Test Case 11:
+s1 = "abcdefghijklmnopqrstuvwxyz"
+s2 = "abcdefghijklmnopqrstuvwxyz"
+s3 = "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+Expected Output: True
+
+Test Case 12:
+s1 = "aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrsssttt"
+s2 = "uvwxyz"
+s3 = "aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuvwxyz"
+Expected Output: True
+
+Test Case 13:
+s1 = "abcdefghij"
+s2 = "klmnopqrst"
+s3 = "akblcmdendfoepgqhrsitj"
+Expected Output: True
+
+Test Case 14:
+s1 = "abcdefghijklm"
+s2 = "nopqrstuvwxyz"
+s3 = "anbocpdqerfsgthiujvkwlxmyzn"
+Expected Output: False
+
+Test Case 15:
+s1 = "wonderful"
+s2 = "supercalifragilisticexpialidocious"
+s3 = "wsuopnedrecalwiofulnderfagilisticexpialidocious"
+Expected Output: True
+
+Test Case 16:
+s1 = "abcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxy"
+s2 = "zyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcb"
+s3 = "azbycxwdveuftsgyrhqipojnkmlobhagfcedbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcb"
+Expected Output: True
+
+Test Case 17:
+s1 = "abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghij"
+s2 = "klmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrst"
+s3 = "akblcmdejnfhgikjklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrstklmnopqrst"
+Expected Output: True
+
+Test Case 18:
+s1 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+s2 = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+s3 = "ababababababababababababababababababababababababababababababababababababababababababababababababababab"
+Expected Output: True
+
+Test Case 19:
+s1 = "abcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxyabcdefghijklmnopqrstuvwxy"
+s2 = "zyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcbzyxwvutsrqponmlkjihgfedcb"
+s3 = "abcdefghijklmnonopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyzopqrstuvwxyz"
+Expected Output: False
+
+Test Case 20:
+s1 = "ghijklmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyz"
+s2 = "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef"
+s3 = "gahbijckdlefmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyzghijklmnopqrstuvwxyz"
+Expected Output: True
