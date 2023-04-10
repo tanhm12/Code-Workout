@@ -6,6 +6,13 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func cloneTree(node *TreeNode) *TreeNode {
+	if node == nil {
+		return nil
+	}
+	return &TreeNode{node.Val, cloneTree(node.Left), cloneTree(node.Right)}
+}
+
 func generateTrees2Params(left, right int) []*TreeNode {
 	if left == right {
 		return []*TreeNode{nil}
@@ -16,7 +23,7 @@ func generateTrees2Params(left, right int) []*TreeNode {
 			rightTrees := generateTrees2Params(i+1, right)
 			for _, leftTree := range leftTrees {
 				for _, rightTree := range rightTrees {
-					result = append(result, &TreeNode{i, leftTree, rightTree})
+					result = append(result, &TreeNode{i, cloneTree(leftTree), cloneTree(rightTree)})
 				}
 			}
 		}
