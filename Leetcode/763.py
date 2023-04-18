@@ -12,4 +12,3 @@ class Solution:
                 last = i + 1
                 first = last
         return res
-
