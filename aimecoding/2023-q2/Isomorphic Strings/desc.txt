@@ -1,0 +1,11 @@
+Hai chuỗi X và Y được coi là đồng dạng nếu có thể thay thế một số kí tự ở chuỗi X để đưa nó về chuỗi Y (hoặc ngược lại). 
+Tất cả các lần xuất hiện của một ký tự phải được thay thế bằng một ký tự khác nhưng vẫn giữ nguyên thứ tự của các ký tự. Không có hai ký tự nào có thể ánh xạ tới cùng một ký tự, nhưng một ký tự có thể ánh xạ tới chính nó.
+
+Ví dụ: 
+    - x = "aff", y = "add" --> Output: True
+    - x = "aff", y = "aaa" --> Output: False
+Biết rằng x và y chỉ chứa các kí tự trong bảng ascii.
+Giới hạn: 1 <= len(x), len(y) <= 5 * 10^4
+
+Input: 2 dòng tương ứng với x và y
+Output: True/False
