@@ -1,0 +1,18 @@
+Trong thử nghiệm mới nhất, các kỹ sư Aimesoft đã tạo ra 2 con bot AF1  và AF2. Để thử nghiệm độ thông minh của 2 bot, các kỹ sư đã nghĩ ra 1 trò chơi như sau:
+Cho trước số tự nhiên a. Ở mỗi lượt chơi có thể chọn 1 số tự nhiên b (1<b<a) sao cho a chia hết cho b (a%b==0), sau đó gán lại a = a - b rồi tiếp tục lượt mới.
+2 bot sẽ thay phiên nhau đổi lượt, bắt đầu bằng bot AF1.
+Trò chơi kết thúc khi 1 trong 2 bot không thể đưa ra lượt đi tiếp theo. Giả sử 2 bot đều rất thông minh, mỗi bước đều chọn lượt chơi tối ưu, hãy giúp các kỹ sư tìm ra bot nào chiến thắng.
+In ra màn hình True nếu bot AF1 thắng, False nếu thua
+
+Ví dụ: 
+    - a = 1 --> Output: False
+    - a = 2 --> Output: True
+    - a = 4 --> Output: True
+
+Giới hạn: 1 <= a <= 1000
+
+Input: 1 dòng tương ứng với a
+Output: True/False
+
+
+
