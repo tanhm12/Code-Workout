@@ -35,6 +35,9 @@ func solve(cookies []int, cur_sol []int, pos int, sol *int) {
 			}
 			solve(cookies, cur_sol, pos+1, sol)
 			cur_sol[j] -= cookies[pos]
+			if cur_sol[j] == 0 {
+				break
+			}
 		}
 
 	}
