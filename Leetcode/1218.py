@@ -12,13 +12,15 @@ class Solution:
                 all_pos[j] = [i]
         
         res = [1] * n
+        cur_pos = {i: 0 for i in all_pos}
         for i, num in enumerate(arr):
             prev = num - difference
             if prev in all_pos:
-                pos = bisect.bisect_left(all_pos[prev], i)
-                if pos == 0:
+                while cur_pos[prev] < len(all_pos[prev]) and all_pos[prev][cur_pos[prev]] < i:
+                    cur_pos[prev] += 1
+                if cur_pos[prev] == 0:
                     continue
-                pos -= 1
-                res[i] = res[all_pos[prev][pos]] + 1
+    
+                res[i] = res[all_pos[prev][cur_pos[prev]-1]] + 1
         
         return max(res)
