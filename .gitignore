@@ -1,6 +1,8 @@
 **__pycache__/
+.idea/
 .vscode/
 .DS_Store
+.venv
 Hackerrank/tmp_out.txt
 ntucoder/*
 Leetcode/test.py
