@@ -1,10 +1,13 @@
 from typing import List
 
+
 class Solution:
     def maxDistance(self, position: List[int], m: int) -> int:
         n = len(position)
+        if m > n:
+            return False
         position.sort()
-        
+
         def is_possible(distance):
             cur = 0
             remain = m - 1
@@ -18,16 +21,16 @@ class Solution:
             return remain <= 0
 
         l = 1
-        r = position[-1] - position[0]
+        r = (position[-1] - position[0]) // (m - 1) + 1
         while l < r:
-            mid = (l+r) // 2
+            mid = (l + r) // 2
             # print(mid, is_possible(mid))
             if is_possible(mid):
                 l = mid + 1
             else:
                 r = mid
-        
-        return l if is_possible(l) else l-1
+
+        return l if is_possible(l) else l - 1
 
 position = [5,4,3,2,1,1000000000]
 m = 2
